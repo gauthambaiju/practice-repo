@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+            // Get the values of the username and password
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value;
+
+            // Check if username is blank
+            if (username === "") {
+                alert("Username must not be blank.");
+                return false; // Prevent form submission
+            }
+
+            // Check if password is less than 6 characters
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false; // Prevent form submission
+            }
+
+            // If all validations pass
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <!-- <h2>Form Validation Example</h2>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">Submit</button>
+    </form> -->
+    <input type="image">
+</body>
+</html>

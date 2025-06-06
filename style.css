@@ -1,0 +1,30 @@
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* body {
+    background: url("./1317103.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    border-top: 4px double black;
+    border-bottom: 4px double black;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+}

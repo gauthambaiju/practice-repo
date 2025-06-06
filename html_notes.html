@@ -1,0 +1,263 @@
+NOTES - html
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Basics--
+<h1>Something</h1> h1 to h6-headings, size decreases from h1 to h6
+<hr> hr-horizontal rule
+<h2>Apple</h2> br-line break
+<hr>
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+Hyperlink--
+<a href="page2.html" target=_self title="This takes you to page 2">
+    Go to page 2
+</a>
+
+Image--
+<img src="/images/Gru_from_Despicable_Me.jpg" height="300" alt="this is a picture of gru " title="I'm despicable">
+
+Audio-- you can add autoplay, muted, loop
+<audio controls src="let-it-go-12279.mp3">
+
+    Video-- you can add autoplay, muted, loop
+    <video controls src="something.mp4" width="500">
+
+        Text formatting tags--
+        <p>This is normal text </p>
+        <p>This is <b>bold</b> text </p>
+        <p>This is <i>italic</i> text </p>
+        <p>This is <big>big</big> text </p>
+        <p>This is <small>small</small> text </p>
+        <p>This is <sub>subscript</sub> text </p>
+        <p>This is <sup>superscript</sup> text </p>
+        <p>This is <ins>inserted</ins> text </p>
+        <p>This is <del>deleted</del> text </p>
+        <p>This is <mark>marked</mark> text </p>
+
+        Lists--
+        <h4>Unordered List</h4>
+        <ul>
+            <li>apple</li>
+            <li>mango
+                <ul>
+                    <li>mangandi</li>
+                    <li>maav</li>
+                    <li>mangatholi</li>
+                </ul>
+            </li>
+            <li>tomato</li>
+            <li>potato</li>
+        </ul>
+
+        <h4>Ordered List</h4>
+        <ol type="A">
+            <li>wake up</li>
+            <li>brush</li>
+            <li>have breakfast</li>
+            <li>take a shower</li>
+        </ol>
+
+        <h4>Description List</h4> dt-description term
+        <dl> dd-description definition
+            <dt>HTML</dt>
+            <dd>This adds structure to a webpage</dd>
+            <dt>CSS</dt>
+            <dd>This adds style to a webpage</dd>
+            <dt>JavaScript</dt>
+            <dd>This adds functionality to a webpage</dd>
+        </dl>
+
+        Table--
+        <h3>Store Hours</h3>
+
+        <table bgcolor="black" width="700"> tr-table row
+            <tr bgcolor="grey"> th-table header
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+
+        Colors--
+
+        <body style="background-color: black;">
+
+            <h1 style="color: red;">Hellooo</h1>
+            <h1 style="color: rgb(66, 245, 212);">Hellooo</h1>
+            <h1 style="color: #7f03fc;">Hellooo</h1>
+
+            <p style="background-color: #222222; color: aquamarine;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+
+        </body>
+
+        Span and Div--
+        span = adds markup to text or portion of a document
+        div = defines a division of a document
+
+        <div style="background-color: #ff0000;">
+            <p>
+                <span style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Sed repellat
+                ipsum id rem quos quam voluptatibus. Odit eum temporibus molestias eveniet atque in architecto unde
+                quam. Adipisci non exercitationem delectus.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed repellat ipsum id rem quos quam
+                voluptatibus. Odit eum temporibus molestias eveniet atque in architecto unde quam. Adipisci non
+                exercitationem delectus.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed repellat ipsum id rem quos quam
+                voluptatibus. Odit eum temporibus molestias eveniet atque in architecto unde quam. Adipisci non
+                exercitationem delectus.
+            </p>
+        </div>
+
+        Meta tags--
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Free HTML tutorial for beginners">
+            <meta name="keywords" content="HTML,tutorial,beginners">
+            <meta name="author" content="Bro Code">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <meta http-equiv="refresh" content="30">
+        </head>
+
+        Iframes--
+        iframe = embed content from another source into an HTML document
+        eg.: used for ads, used in many hacking techniques
+
+        <iframe src="https://www.bing.com" width="750" height="250"></iframe>
+        <iframe style="border: 0" src="ad.html" width="750" height="100">
+
+            Buttons-- you can add 'disabled' attribute to disable the button
+            <a href="https://www.google.com">
+                <button style="background-color: #555555; color: #00FF00; border-radius: 5px;">click me</button>
+            </a>
+
+            A simple JavaScript program--
+
+            <button onclick="doSomething()" style="background-color: #555555; color: #00FF00; border-radius: 5px;">click
+                me</button>
+
+            <p id="test">Hello</p>
+
+            <script>
+                function doSomething() {
+                    document.getElementById("test").innerHTML = "Goodbye";
+                }
+            </script>
+
+            Forms--
+            <form action="action_page.php" method="POST">
+
+                <div>
+                    <label for="fname">first name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="beyyyyyy" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="lname">last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="hehehehe" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pass">password:</label>
+                    <input type="password" id="pass" name="pass" maxlength="12" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" placeholder="ummmm" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="phone">phone no:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="jfjfjfjf" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="bdate">birthdate:</label>
+                    <input type="date" id="bdate" name="bdate">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="quantity">quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Mr.">Mr.</label>
+                    <input type="radio" name="title" id="Mr." value="Mr.">
+
+                    <label for="Mrs.">Mrs.</label>
+                    <input type="radio" name="title" id="Mrs." value="Mrs.">
+
+                    <label for="PhD">PhD.</label>
+                    <input type="radio" name="title" id="PhD" value="PhD.">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="payment">payment:</label> dropdown menu
+                    <select id="payment" name="payment">
+                        <option value="visa">visa</option>
+                        <option value="mastercard">mastercard</option>
+                        <option value="giftcard">giftcard</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="subscribe">subscribe:</label> checkbox
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="reset">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="submit">
+                </div>
+
+            </form>
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

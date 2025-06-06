@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h2>Palindrome Checker</h2>
+    <form method="post" action="">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString" required>
+        <button type="submit" name="checkPalindrome">Check</button>
+    </form>
+
+    <?php
+    // Check if form was submitted
+    if (isset($_POST['checkPalindrome'])) {
+        $inputString = $_POST['inputString'];
+        $reversedString = strrev($inputString); // Reverse the string
+
+        // Check if the original string and the reversed string are the same
+        if ($inputString === $reversedString) {
+            echo "<p>'$inputString' is a palindrome.</p>";
+        } else {
+            echo "<p>'$inputString' is not a palindrome.</p>";
+        }
+    }
+    ?>
+</body>
+</html>
